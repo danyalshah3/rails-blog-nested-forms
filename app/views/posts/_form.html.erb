@@ -24,9 +24,9 @@
     </div>
 
     <ul>
-    <li><%= f.fields_for :tag, Tag.new do |tag_attributes| %><br></li>
-      <li><%= tag_attributes.label :name %><br></li>
-      <li><%= tag.attributes.text_field :name %><br></li>
+    <li><%= f.fields_for :tag_attributes, Tag.new do |tag_attribute| %><br></li>
+      <li><%= tag_attribute.label :name %><br></li>
+      <li><%= tag.attribute.text_field :name %><br></li>
       <% end %>
   </ul>
 
